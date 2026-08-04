@@ -1,8 +1,12 @@
 .navbar {
-display: flex;
-justify-content:center;
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+    list-style: none;
+
 }
-#test1{
+
+#test1 {
     border-color: blue;
     background-color: brown;
     display: flex;
