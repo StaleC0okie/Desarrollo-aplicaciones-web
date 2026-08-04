@@ -1,0 +1,14 @@
+.navbar {
+display: flex;
+justify-content:center;
+}
+#test1{
+    border-color: blue;
+    background-color: brown;
+    display: flex;
+    padding: 20 px;
+    border-radius: 15px;
+    width: 20vh;
+    justify-content: center;
+    box-sizing: 40vh;
+}
