@@ -6,33 +6,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Lab 1</title>
+    <title>Lab</title>
 </head>
 
 <body>
     <header>
-        <h1>Laboratorio 1</h1>
+        <h1>Laboratorios</h1>
+        <nav class="navbar"><a href="#inicio">Inicio </a><a href="#caracteristicas">Caracteristicas </a><a
+                href="#contacto">Contacto </a></nav>
     </header>
-    <nav class="navbar"><a href="#presentacion">Presentacion </a><a href="#caracteristicas">Caracteristicas proyecto
-        </a><a href="#contacto">Contacto </a></nav>
-    <main>
-        <p>Datos de contacto</p>
-        <fieldset>
 
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" required>
-            <label for="correo">Correo</label>
-            <input type="email" id="email" type="email" required>
-            <button type="submit">Enviar</button>
-        </fieldset>
-        <div id="test1">
-            <p>Test contenedor</p>
+    <main>
+        <section class="caracteristicas" id="caracteristicas">
+            <p class="titulos">Caracteristicas</p>
+
+            <div class="card">
+
+                <div class="cards">
+                    <li>Caracteristica 1</li>
+                </div>
+                
+                <div class="cards">
+                    <li>Caracteristica 2</li>
+                </div>
+
+                <div class="cards">
+                    <li>Caracteristica 3</li>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <div class="caracteristicas">
+
+            <p class="titulos">Unidades</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unidad</th>
+                        <th>Titulo</th>
+                        <th>Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unidad 1</td>
+                        <td>Front-End</td>
+                        <td>Construye interfaces web interactivas</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 2</td>
+                        <td>Back-End</td>
+                        <td>Construye soluciones back-end robustas mediante la implementación de APIs</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad 3</td>
+                        <td>Full Stack</td>
+                        <td>Desarrolla soluciones web completas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="contacto">
+            <p class="titulos">Contacto</p>
+            <fieldset>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required placeholder="nombre@gmail.com">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required minlength="10"
+                    maxlength="200"></textarea>
+                <button type="submit">Enviar</button>
+            </fieldset>
+            <hr>
         </div>
     </main>
+    <footer>
+        <p>Autor: Luis</p>
+    </footer>
 </body>
 
-<footer>
-    <p>Autor: Luis</p>
-</footer>
+
 
 </html>
