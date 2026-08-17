@@ -16,15 +16,34 @@ header {
     gap: 16px;
     padding: 12px 16px;
     border: 1px solid black;
+    grid-area: header;
+    flex-direction: column;
 }
 
 .titulos {
     font-weight: bold;
     font-size: 1.2rem;
+    text-align: center;
+
 }
 
 body {
     background-color: lightgray;
+    display: grid;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
 }
 
 fieldset {
@@ -35,23 +54,20 @@ fieldset {
     margin-bottom: 20px;
     background-color: #f9f9f9;
     width: 300px;
-    height: 200px;
 }
 
-#mensaje {
-    height: 400px;
-
-}
 
 table {
     border-collapse: collapse;
     margin-top: 10px;
+    margin: 0 auto;
+
 }
 
 th,
 td {
     border: 1px solid black;
-    padding: 8px;
+    padding: 3px;
 }
 
 .inicio {
@@ -60,19 +76,52 @@ td {
 }
 
 .card {
-
     display: flex;
     gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .cards {
     padding: 20px;
     width: 200px;
+    text-align: center;
+    list-style-position: inside;
 }
 
-@media (max-width: 600px) {
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+@media (min-width: 450px) {
     .card {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+
+    header {
+        flex-direction: row;
+    }
+
+    .titulos {
+        text-align: left;
+    }
+
+    .contacto {
+        align-items: flex-start;
+    }
+
+    .caracteristicas {
+        align-items: center;
+    }
+    table {
+        margin: 10px 0;
+    }
+    footer {
+        text-align: left;
     }
 }
