@@ -23,8 +23,38 @@ header {
     font-size: 1.2rem;
 }
 
-body {
+body.modo-claro{
     background-color: lightgray;
+<<<<<<< Updated upstream
+=======
+    display: grid;
+    padding: 16px;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+}
+
+body.modo-oscuro{
+    background-color: #2c2c2c;
+    color: #ffffff;
+    .card{
+        color: white;
+    }
+    fieldset{
+        color: black;
+    }
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+>>>>>>> Stashed changes
 }
 
 fieldset {
@@ -75,4 +105,8 @@ td {
     .card {
         flex-direction: column;
     }
+}
+
+.saludo{
+    align-content: column;
 }
